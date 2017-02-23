@@ -14,9 +14,7 @@ webpack(config, function(err, stats){
 // relase
 const relaseConfig = merge(config, {
 	output: {
-		filename: 'Gestrue.min.js',
-		library: 'Gestrue',
-		libraryTarget: 'umd'
+		filename: 'Gestrue.min.js'
 	},
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin({
