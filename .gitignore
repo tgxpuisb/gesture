@@ -6,4 +6,5 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-node_module
+node_modules/
+yarn-error.log
