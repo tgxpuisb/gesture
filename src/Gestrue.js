@@ -1,5 +1,5 @@
 /**
- * @author LYZ .
+ * @author LYZ
  */
 "use strict"
 
@@ -67,7 +67,7 @@ class Gesture{
 
     evnetList
 
-    constructor(container, eventList = [
+    constructor(container = 'body', eventList = [
         // 轻击事件
         'tap',
         // 快速双击

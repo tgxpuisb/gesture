@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "a gesture library for mobile phone",
   "main": "src/index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "bulid": "node build.js"
+  },
   "repository": "https://github.com/tgxpuisb/gesture.git",
   "author": "yizhi.li <tgxpuisb@hotmail.com>",
   "license": "MIT",

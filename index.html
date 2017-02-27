@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		body,html{
+			width: 100%;
+			height: 100%
+		}
+	</style>
+</head>
+<body>
+	<div id="box">box</div>
+	<div id="box2">box2</div>
+	<div id="box3">box3</div>
+	<script src="/Gestrue.js"></script>
+	<script>
+		console.log(Gestrue)
+		new Gestrue('body')
+		var body = document.querySelector('body')
+		var list = [
+			'tap',
+			'doubletap',
+			'panstart',
+			'horizontalpanstart',
+			'verticalpanstart',
+			'pan',
+			'horizontalpan',
+			'verticalpan',
+			'panend',
+			'flick',
+			'horizontalflick',
+			'verticalflick',
+			'press',
+			'pressend'
+		]
+		list.forEach(function(v){
+			body.addEventListener(v, function(){
+				console.log('emit ' + v)
+			})
+		})
+	</script>
+</body>
+</html>
